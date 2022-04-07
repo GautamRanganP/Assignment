@@ -2,13 +2,9 @@ import React,{useState} from 'react';
 import {StyleSheet,Button,TextInput,View,Text} from'react-native';
 
 export default function Calculator(){
-    // const [element,setElement]=useState({
-    //     input1:"",
-    //     input2:""
-    // })
     const [input1,setInput1]=useState('')
     const [input2,setInput2]=useState('')
-    const [result,setResult]=useState('')
+    const [result,setResult]=useState('0')
     const changeHandler=(changedtext)=>{
         console.log(input2)
         setInput2(changedtext)
